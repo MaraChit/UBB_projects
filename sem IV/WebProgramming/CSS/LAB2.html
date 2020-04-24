@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #b3ffe6}
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .button2 {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color:#ccccff;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .button2:hover {background-color: #6666ff}
+        .button2:active {
+            background-color: #7300e6;
+            box-shadow: 0 5px #666;
+            transform: translate3d(4px,4px,4px);
+        }
+
+
+
+        .div-wrapper{
+            position: absolute;
+            height: 370px;
+            width: 500px;
+        }
+
+        .div-wrapper img{
+            position: absolute;
+            height: 50px;
+            width: 30px;
+            bottom: 0;
+        }
+        .img1{
+            margin-left: 5px;
+        }
+        .img2{
+            margin-left: 45px;
+        }
+        .img3{
+            margin-left: 85px;
+        }
+        .img4{
+            margin-left: 125px;
+        }
+        .img5{
+            margin-left: 165px;
+        }
+        .img6{
+            margin-left: 205px;
+        }
+        .img7{
+            margin-left: 245px;
+        }
+        .img1:hover ~.divclass{
+            background-image: url("pics/book1.jpg");
+        }
+
+        .img2:hover ~.divclass{
+            background-image: url("pics/book2.jpg");
+        }
+
+        .img3:hover ~.divclass{
+            background-image: url("pics/book3.jpg");
+        }
+        .img4:hover ~.divclass{
+            background-image: url("pics/book4.jpg");
+        }
+        .img5:hover ~.divclass{
+            background-image: url("pics/book5.jpg");
+        }
+        .img6:hover ~.divclass{
+            background-image: url("pics/book6.jpg");
+        }
+        .img7:hover ~.divclass{
+            background-image: url("pics/book7.jpg");
+        }
+
+        .divclass{
+            position: absolute;
+            bottom: 30;
+            top: 300;
+
+            background-size: contain;
+            width: 200px;
+            height: 300px;
+            '''background-color: orange;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h2>Pressed Effect Buttons</h2>
+
+<button class="button">Click Me</button>
+<button class="button2">Click Me 2</button>
+<br>
+<br>
+<div class="div-wrapper">
+    <img src="pics/book1.jpg" height="50px" width="30px" class="img1">
+    <img src="pics/book2.jpg" height="50px" width="30px" class="img2">
+    <img src="pics/book3.jpg" height="50px" width="30px" class="img3">
+    <img src="pics/book4.jpg" height="50px" width="30px" class="img4">
+    <img src="pics/book5.jpg" height="50px" width="30px" class="img5">
+    <img src="pics/book6.jpg" height="50px" width="30px" class="img6">
+    <img src="pics/book7.jpg" height="50px" width="30px" class="img7">
+    <div class="divclass">
+
+    </div>
+</div>
+
+</body>
+</html>
+
+

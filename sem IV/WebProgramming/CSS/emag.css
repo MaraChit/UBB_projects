@@ -1,0 +1,184 @@
+body{
+    font-family: "Open Sans",Helvetica,Arial;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+.emag-navbar {
+    height: 84px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.emag-container {
+    display: flex;
+    width: 1242px;
+    position: absolute;
+    top: 15px;
+    left: 140px;
+}
+
+.emag-image {
+    flex: 1;
+    margin: 5px;
+    margin-top: 7px;
+}
+
+.logo{
+    float: right;
+
+}
+
+.emag-search {
+    flex: 4;
+    margin: 5px;
+    margin-left:15px;
+    padding-top: 0px;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+form.example input[type=text] {
+    padding: 7px;
+    font-size: 17px;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 1;
+    float: left;
+    width: 530px;
+    font-size: 16px;
+    border-radius: 15px;
+    border-color: #0082e6;
+}
+
+.emag-input{
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    background-image: url("pics/search.jpg");
+    background-repeat: no-repeat;
+    background-position: 500px;
+}
+
+
+.emag-contul-meu {
+    flex: 1;
+    margin: 5px;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.menu-text-element {
+    color: black;
+    font-family: "Open Sans",Helvetica,Arial;
+    font-size: 15px;
+}
+
+.emag-favorite {
+    flex: 1;
+    margin: 5px;
+    margin-top: 0.5px;
+}
+
+.emag-cos-cumparaturi {
+    flex: 1;
+    margin: 5px;
+}
+
+.navigation-table {
+    position: absolute;
+    margin-top: 5px;
+    margin-left:7px;
+}
+
+.emag-second-navbar{
+    background: linear-gradient(to right,#ff1d25 5%,#a0328c 35%,#7040a4 45%,#4359c7 55%,#0082e6 70%);
+    height: 40px;
+    overflow: hidden;
+    position: fixed;
+    top: 84px;
+    width: 100%;
+    right: 0;
+    z-index: 100;
+
+}
+
+.emag-second-content{
+    display: flex;
+    width: 1242px;
+
+    position: absolute;
+    left: 140px;
+}
+
+.produse{
+    font-family: Helvetica,Arial;
+    color: #4d4d4d;
+    margin-top: 6px;
+    background-color: white;
+}
+
+.other{
+    color: white;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.emag-spatiu{
+    padding-left: 20px;
+}
+
+.emag-main {
+    height: 500px;
+    width: 1242px;
+    background-color: white;
+    position: absolute;
+    top:120px;
+    left: 140px;
+}
+
+.emag-main-content {
+    display: flex;
+}
+
+.emag-write{
+    font-family:"Open Sans",Helvetica,Arial;
+    font-size: 12px;
+}
+.emag-mainpic{
+    overflow:hidden;
+    flex: 8;
+}
+
+.emag-bottom{
+    height: 60px;
+    width: 1242px;
+    background-color: white;
+    position: fixed;
+    top:640px;
+    left: 140px;
+}
+
+.emag-bottom-container{
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.emag-bottom-img{
+    padding-top: 4px;
+    padding-left:60px;
+    height:45px;
+    width: 45px;
+}
+.final{
+    text-align: right;
+    font-size: 10px;
+    color: gray;
+}
