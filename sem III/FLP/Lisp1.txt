@@ -1,0 +1,94 @@
+;gnu clisp 2.49
+
+;a) Write a function to return the sum of two vectors
+;sumVectors(l1...ln, p1...pn): [], n=0
+;                            :(l1+p1) U sumVectors(l2...ln,p2...pn)
+
+
+(defun sumVectors(list1 list2)
+    (cond
+        ( (null list1) list2)
+        ( (null list2) list1)
+        (t (cons (+ (car list1)(car list2))(sumVectors(cdr list1)(cdr list2))))))
+(print(sumVectors'(1 2 3 4) '(5 6 7 8)))
+
+;b) Write a function to get from a given list the list of all atoms, on any level, but on the same order. Example:(((A B) C) (D E)) ==> (A B C D E)
+;getAtoms(l1...ln):[] , n=0
+;                 :l1 U getAtoms(l2...ln), if l1 is atom
+;                 :getAtoms(l1) U getAtoms(l2...ln), if l1 is list
+
+(defun getAtom(list1)
+    (cond 
+        ((null list1) nil)
+        ((atom (car list1)) (cons (car list1) (getAtom(cdr list1))))
+        (T (append (getAtom(car list1)) (getAtom(cdr list1))))
+    )
+)
+
+(print(getAtom'(((A B) C) (D E))))
+
+;c) Write a function that, with a list given as parameter, inverts only continuous sequences of atoms. Example:(a b c (d (e f) g h i)) ==> (c b a (d (f e) i h g))
+;reverse(l1...ln):[], n=0
+;                :reverse(l2...ln) U l1
+
+
+(defun reversee(list)
+    (cond 
+        ((null list) nil)
+        ((append (reversee(cdr list)) (list (car list))))))
+
+(print(reversee'(1 2 4 5)))
+
+;reverseSeq(l1...ln,aux):[], n=0
+;                       :reverseSeq(l2...ln,l1 U aux); l1-atom
+;                       :aux U reverseSeq(l1,[]) U reverseSeq(l2...ln,[]);l1-list
+
+(defun reverseSeq(list aux)
+    (cond
+        ((null list) aux)
+        ((atom (car list)) (reverseSeq (cdr list) (cons (car list) aux)))
+        (t (append aux (apply'list (reverseSeq (car list) '()) (reverseSeq (cdr list) '()))))
+     )
+)
+(print(reverseSeq'(a b c (d (e f) g h i)) '()))  
+(print(reverseSeq'(a b c (d (e f) g (h p) i(j k l)h o)) '())) 
+
+;d) Write a list to return the maximum value of the numerical atoms from a list, at superficial level.
+;findFirstNumber(l1...ln): nil, list is empty
+;                       : l1 , l1 - number
+;                       :findFirstNumber(l2...ln) , otherwise
+
+(defun findFirstNumber(list)
+    (cond
+        ((null list) nil)
+        ((numberp (car list))(car list))
+        (t(findFirstNumber(cdr list)))
+       )
+ )
+
+(print(findFirstNumber'(a c j (6 8) 9)))
+
+;Maxx(l1...ln, max): max, list is empty
+;                  :Maxx(l2...ln , l1) , l1 - nr and l1 > max
+;                  :Maxx(l2...ln, max) , otherwise
+
+(defun Maxx (list max)
+    (cond
+        ((null list) max)
+        ((AND (numberp (car list))(< max (car list)))(Maxx (cdr list)(car list)))
+        (t (Maxx (cdr list) max))
+     )
+ )
+
+;main(l1...ln) : nil - findFirstNumber(list) - null
+;              :Maxx(list, findFirstNumber(list)), otherwise
+
+(defun main (list)
+    (cond
+        ((null (findFirstNumber list)) nil)
+        (t (Maxx list (findFirstNumber list)))))
+
+(print(main '(a g h (6 0 8 k) 8 2 4 12 h)))
+
+
+

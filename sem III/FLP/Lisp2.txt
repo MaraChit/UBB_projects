@@ -1,0 +1,26 @@
+;10. Return the level of a node X in a tree of type (2). The level of the root element is 0.
+
+;findLvl(l1 l2 l3, x, lvl): nil , list is empty
+;                        :lvl , l1- nr  and x=l1
+;                        :findLvl(l2) U findLvl(l3)
+;gnu clisp 2.49
+
+(defun findLvl(list x lvl)
+    (cond 
+        ((null (car list)) nil)
+        
+        ((and (numberp (car list))(= x (car list))) lvl)
+        
+        (t (progn(
+                    setf lvl2 (findLvl (car(cdr list)) x (+ 1 lvl)))
+                   (if (null lvl2)
+                       (findLvl (caddr list) x (+ 1 lvl))
+                        lvl2
+                   )
+                  )
+            )
+         )
+      )
+
+
+(print(findLvl '(0(1(2(3)(4))(5))(6(7(8(9)(10))))) 4 0))

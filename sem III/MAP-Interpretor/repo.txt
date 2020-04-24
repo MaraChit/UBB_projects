@@ -1,0 +1,2946 @@
+ID: 1
+e: [(string varf;(varf=test.in;(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))))))]
+s: {}
+o: []
+h:ID: 1
+e: [(varf=test.in;(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))))), string varf]
+s: {}
+o: []
+h:ID: 1
+e: [(varf=test.in;(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))))), string varf]
+s: {}
+o: []
+h:ID: 1
+e: [(varf=test.in;(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf))))))))]
+s: {varf=}
+o: []
+h:ID: 1
+e: [(varf=test.in;(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf))))))))]
+s: {varf=}
+o: []
+h:ID: 1
+e: [(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf))))))), varf=test.in]
+s: {varf=}
+o: []
+h:ID: 1
+e: [(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf))))))), varf=test.in]
+s: {varf=}
+o: []
+h:ID: 1
+e: [(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))))]
+s: {varf=test.in}
+o: []
+h:ID: 1
+e: [(openRFile(varf);(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))))]
+s: {varf=test.in}
+o: []
+h:ID: 1
+e: [(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))), openRFile(varf)]
+s: {varf=test.in}
+o: []
+h:ID: 1
+e: [(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf)))))), openRFile(varf)]
+s: {varf=test.in}
+o: []
+h:ID: 1
+e: [(int varc;(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf))))))]
+s: {varf=test.in}
+o: []
+h:ID: 1
+e: [(readFile(varf);(print(varc);(readFile(varf);(print(varc);closeRFile(varf))))), int varc]
+s: {varf=test.in}
+o: []
+h:ID: 1
+e: [(int v;(v=2;print(v)))]
+s: {}
+o: []
+h:ID: 1
+e: [(v=2;print(v)), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=2;print(v)), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=2;print(v))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=2;print(v))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(v), v=2]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(v), v=2]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(v)]
+s: {v=2}
+o: []
+h:ID: 1
+e: [print(v)]
+s: {v=2}
+o: []
+h:ID: 1
+e: []
+s: {v=2}
+o: [2]
+h:ID: 1
+e: [(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))]
+s: {}
+o: []
+h:ID: 1
+e: [(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+s: {}
+o: []
+h:ID: 1
+e: [(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+s: {}
+o: []
+h:ID: 1
+e: [(int b;(a=2+3*5;(b=a+1;print(b))))]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int b;(a=2+3*5;(b=a+1;print(b))))]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(a=2+3*5;(b=a+1;print(b))), int b]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(a=2+3*5;(b=a+1;print(b))), int b]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(a=2+3*5;(b=a+1;print(b)))]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=2+3*5;(b=a+1;print(b)))]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(b=a+1;print(b)), a=2+3*5]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(b=a+1;print(b)), a=2+3*5]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(b=a+1;print(b))]
+s: {a=17, b=0}
+o: []
+h:ID: 1
+e: [(b=a+1;print(b))]
+s: {a=17, b=0}
+o: []
+h:ID: 1
+e: [print(b), b=a+1]
+s: {a=17, b=0}
+o: []
+h:ID: 1
+e: [print(b), b=a+1]
+s: {a=17, b=0}
+o: []
+h:ID: 1
+e: [print(b)]
+s: {a=17, b=18}
+o: []
+h:ID: 1
+e: [print(b)]
+s: {a=17, b=18}
+o: []
+h:ID: 1
+e: []
+s: {a=17, b=18}
+o: [18]
+h:ID: 1
+e: [(int v;(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))))]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))), Ref(int) a]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))), Ref(int) a]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))), v=10]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))), v=10]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))), newH(a, 22)]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))), newH(a, 22)]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a))), fork((wH(a, 30);(v=32;(print(v);print(rH(a))))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a))), fork((wH(a, 30);(v=32;(print(v);print(rH(a))))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(wH(a, 30);(v=32;(print(v);print(rH(a)))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(wH(a, 30);(v=32;(print(v);print(rH(a)))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(v=32;(print(v);print(rH(a)))), wH(a, 30)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(v=32;(print(v);print(rH(a)))), wH(a, 30)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 2
+e: [(v=32;(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 1
+e: [print(rH(a))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 2
+e: [(v=32;(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 1
+e: []
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a))), v=32]
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a))), v=32]
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a))]
+s: {a=(1,int), v=32}
+o: [10, 30, 32]
+h:	1->30
+ID: 2
+e: [print(rH(a))]
+s: {a=(1,int), v=32}
+o: [10, 30, 32]
+h:	1->30
+ID: 2
+e: []
+s: {a=(1,int), v=32}
+o: [10, 30, 32, 30]
+h:	1->30
+ID: 1
+e: [(v=2;print(v)), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))), Ref(int) a]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))), v=10]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))), newH(a, 22)]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a))), fork((wH(a, 30);(v=32;(print(v);print(rH(a))))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(wH(a, 30);(v=32;(print(v);print(rH(a)))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(v=32;(print(v);print(rH(a)))), wH(a, 30)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 2
+e: [(v=32;(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 1
+e: []
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a))), v=32]
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a))]
+s: {a=(1,int), v=32}
+o: [10, 30, 32]
+h:	1->30
+ID: 2
+e: []
+s: {a=(1,int), v=32}
+o: [10, 30, 32, 30]
+h:	1->30
+ID: 1
+e: [(newH(v, 20);(Ref(Ref(int)) a;(newH(a, v);(print(v);print(a))))), Ref(int) v]
+s: {}
+o: []
+h:ID: 1
+e: [(newH(v, 20);(Ref(Ref(int)) a;(newH(a, v);(print(v);print(a)))))]
+s: {v=(0,int)}
+o: []
+h:ID: 1
+e: [(Ref(Ref(int)) a;(newH(a, v);(print(v);print(a)))), newH(v, 20)]
+s: {v=(0,int)}
+o: []
+h:ID: 1
+e: [(Ref(Ref(int)) a;(newH(a, v);(print(v);print(a))))]
+s: {v=(1,int)}
+o: []
+h:	1->20
+ID: 1
+e: [(newH(a, v);(print(v);print(a))), Ref(Ref(int)) a]
+s: {v=(1,int)}
+o: []
+h:	1->20
+ID: 1
+e: [(newH(a, v);(print(v);print(a)))]
+s: {a=(0,Ref(int)), v=(1,int)}
+o: []
+h:	1->20
+ID: 1
+e: [(print(v);print(a)), newH(a, v)]
+s: {a=(0,Ref(int)), v=(1,int)}
+o: []
+h:	1->20
+ID: 1
+e: [(print(v);print(a))]
+s: {a=(2,Ref(int)), v=(1,int)}
+o: []
+h:	1->20
+	2->(1,int)
+ID: 1
+e: [print(a), print(v)]
+s: {a=(2,Ref(int)), v=(1,int)}
+o: []
+h:	1->20
+	2->(1,int)
+ID: 1
+e: [print(a)]
+s: {a=(2,Ref(int)), v=(1,int)}
+o: [(1,int)]
+h:	1->20
+	2->(1,int)
+ID: 1
+e: []
+s: {a=(2,Ref(int)), v=(1,int)}
+o: [(1,int), (2,Ref(int))]
+h:	1->20
+	2->(1,int)
+ID: 1
+e: [(int b;(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))))), int a]
+s: {}
+o: []
+h:ID: 1
+e: [(int b;(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))))]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))), int b]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))))]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))), int c]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))]
+s: {a=0, b=0, c=0}
+o: []
+h:ID: 1
+e: [(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))), a=1]
+s: {a=0, b=0, c=0}
+o: []
+h:ID: 1
+e: [(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))]
+s: {a=1, b=0, c=0}
+o: []
+h:ID: 1
+e: [(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))), b=2]
+s: {a=1, b=0, c=0}
+o: []
+h:ID: 1
+e: [(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))]
+s: {a=1, b=2, c=0}
+o: []
+h:ID: 1
+e: [(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)), c=5]
+s: {a=1, b=2, c=0}
+o: []
+h:ID: 1
+e: [(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), IF(a*10==b*c) THEN((print(a);print(b)))ELSE(IF(a*10==10) THEN((print(100);print(200)))ELSE(print(300)))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), (print(a);print(b))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), print(b), print(a)]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), print(b)]
+s: {a=1, b=2, c=5}
+o: [1]
+h:ID: 1
+e: [print(300)]
+s: {a=1, b=2, c=5}
+o: [1, 2]
+h:ID: 1
+e: []
+s: {a=1, b=2, c=5}
+o: [1, 2, 300]
+h:ID: 1
+e: [(int b;(int c;(a=1;(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))))), int a]
+s: {}
+o: []
+h:ID: 1
+e: [(int b;(int c;(a=1;(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))))]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int c;(a=1;(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))), int b]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int c;(a=1;(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))))]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=1;(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))), int c]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=1;(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))]
+s: {a=0, b=0, c=0}
+o: []
+h:ID: 1
+e: [(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))), a=1]
+s: {a=0, b=0, c=0}
+o: []
+h:ID: 1
+e: [(b=2;(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))]
+s: {a=1, b=0, c=0}
+o: []
+h:ID: 1
+e: [(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))), b=2]
+s: {a=1, b=0, c=0}
+o: []
+h:ID: 1
+e: [(c=6;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))]
+s: {a=1, b=2, c=0}
+o: []
+h:ID: 1
+e: [(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)), c=6]
+s: {a=1, b=2, c=0}
+o: []
+h:ID: 1
+e: [(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))]
+s: {a=1, b=2, c=6}
+o: []
+h:ID: 1
+e: [print(300), Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300))]
+s: {a=1, b=2, c=6}
+o: []
+h:ID: 1
+e: [print(300), IF(a*10==b*c) THEN((print(a);print(b)))ELSE(IF(a*10==10) THEN((print(100);print(200)))ELSE(print(300)))]
+s: {a=1, b=2, c=6}
+o: []
+h:ID: 1
+e: [print(300), IF(a*10==10) THEN((print(100);print(200)))ELSE(print(300))]
+s: {a=1, b=2, c=6}
+o: []
+h:ID: 1
+e: [print(300), (print(100);print(200))]
+s: {a=1, b=2, c=6}
+o: []
+h:ID: 1
+e: [print(300), print(200), print(100)]
+s: {a=1, b=2, c=6}
+o: []
+h:ID: 1
+e: [print(300), print(200)]
+s: {a=1, b=2, c=6}
+o: [100]
+h:ID: 1
+e: [print(300)]
+s: {a=1, b=2, c=6}
+o: [100, 200]
+h:ID: 1
+e: []
+s: {a=1, b=2, c=6}
+o: [100, 200, 300]
+h:ID: 1
+e: [(int b;(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))))), int a]
+s: {}
+o: []
+h:ID: 1
+e: [(int b;(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))))]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))), int b]
+s: {a=0}
+o: []
+h:ID: 1
+e: [(int c;(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))))]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))), int c]
+s: {a=0, b=0}
+o: []
+h:ID: 1
+e: [(a=1;(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))))]
+s: {a=0, b=0, c=0}
+o: []
+h:ID: 1
+e: [(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))), a=1]
+s: {a=0, b=0, c=0}
+o: []
+h:ID: 1
+e: [(b=2;(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))))]
+s: {a=1, b=0, c=0}
+o: []
+h:ID: 1
+e: [(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))), b=2]
+s: {a=1, b=0, c=0}
+o: []
+h:ID: 1
+e: [(c=5;(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)))]
+s: {a=1, b=2, c=0}
+o: []
+h:ID: 1
+e: [(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300)), c=5]
+s: {a=1, b=2, c=0}
+o: []
+h:ID: 1
+e: [(Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300));print(300))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), Switch(a*10)(case b*c: (print(a);print(b)))(case 10: (print(100);print(200))(default: print(300))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), IF(a*10==b*c) THEN((print(a);print(b)))ELSE(IF(a*10==10) THEN((print(100);print(200)))ELSE(print(300)))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), (print(a);print(b))]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), print(b), print(a)]
+s: {a=1, b=2, c=5}
+o: []
+h:ID: 1
+e: [print(300), print(b)]
+s: {a=1, b=2, c=5}
+o: [1]
+h:ID: 1
+e: [print(300)]
+s: {a=1, b=2, c=5}
+o: [1, 2]
+h:ID: 1
+e: []
+s: {a=1, b=2, c=5}
+o: [1, 2, 300]
+h:ID: 1
+e: []
+s: {}
+o: []
+h:ID: 1
+e: []
+s: {}
+o: []
+h:ID: 1
+e: [(print(10);wait(10-1))]
+s: {}
+o: []
+h:ID: 1
+e: [wait(10-1), print(10)]
+s: {}
+o: []
+h:ID: 1
+e: [wait(10-1)]
+s: {}
+o: [10]
+h:ID: 1
+e: [(print(10-1);wait(10-1-1))]
+s: {}
+o: [10]
+h:ID: 1
+e: [wait(10-1-1), print(10-1)]
+s: {}
+o: [10]
+h:ID: 1
+e: [wait(10-1-1)]
+s: {}
+o: [10, 9]
+h:ID: 1
+e: [(print(10-1-1);wait(10-1-1-1))]
+s: {}
+o: [10, 9]
+h:ID: 1
+e: [wait(10-1-1-1), print(10-1-1)]
+s: {}
+o: [10, 9]
+h:ID: 1
+e: [wait(10-1-1-1)]
+s: {}
+o: [10, 9, 8]
+h:ID: 1
+e: [(print(10-1-1-1);wait(10-1-1-1-1))]
+s: {}
+o: [10, 9, 8]
+h:ID: 1
+e: [wait(10-1-1-1-1), print(10-1-1-1)]
+s: {}
+o: [10, 9, 8]
+h:ID: 1
+e: [wait(10-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [(print(10-1-1-1-1);wait(10-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [wait(10-1-1-1-1-1), print(10-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [wait(10-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [(print(10-1-1-1-1-1);wait(10-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1), print(10-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+h:ID: 1
+e: [(print(10);wait(10-1))]
+s: {}
+o: []
+h:ID: 1
+e: [wait(10-1), print(10)]
+s: {}
+o: []
+h:ID: 1
+e: [wait(10-1)]
+s: {}
+o: [10]
+h:ID: 1
+e: [(print(10-1);wait(10-1-1))]
+s: {}
+o: [10]
+h:ID: 1
+e: [wait(10-1-1), print(10-1)]
+s: {}
+o: [10]
+h:ID: 1
+e: [wait(10-1-1)]
+s: {}
+o: [10, 9]
+h:ID: 1
+e: [(print(10-1-1);wait(10-1-1-1))]
+s: {}
+o: [10, 9]
+h:ID: 1
+e: [wait(10-1-1-1), print(10-1-1)]
+s: {}
+o: [10, 9]
+h:ID: 1
+e: [wait(10-1-1-1)]
+s: {}
+o: [10, 9, 8]
+h:ID: 1
+e: [(print(10-1-1-1);wait(10-1-1-1-1))]
+s: {}
+o: [10, 9, 8]
+h:ID: 1
+e: [wait(10-1-1-1-1), print(10-1-1-1)]
+s: {}
+o: [10, 9, 8]
+h:ID: 1
+e: [wait(10-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [(print(10-1-1-1-1);wait(10-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [wait(10-1-1-1-1-1), print(10-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [wait(10-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [(print(10-1-1-1-1-1);wait(10-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1), print(10-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [(print(10-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1))]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [wait(10-1-1-1-1-1-1-1-1-1-1)]
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: []
+s: {}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: [(v=20;(wait(10);print(v*10))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=20;(wait(10);print(v*10)))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(wait(10);print(v*10)), v=20]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(wait(10);print(v*10))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), wait(10)]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), (print(10);wait(10-1))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), wait(10-1), print(10)]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), wait(10-1)]
+s: {v=20}
+o: [10]
+h:ID: 1
+e: [print(v*10), (print(10-1);wait(10-1-1))]
+s: {v=20}
+o: [10]
+h:ID: 1
+e: [print(v*10), wait(10-1-1), print(10-1)]
+s: {v=20}
+o: [10]
+h:ID: 1
+e: [print(v*10), wait(10-1-1)]
+s: {v=20}
+o: [10, 9]
+h:ID: 1
+e: [print(v*10), (print(10-1-1);wait(10-1-1-1))]
+s: {v=20}
+o: [10, 9]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1), print(10-1-1)]
+s: {v=20}
+o: [10, 9]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1)]
+s: {v=20}
+o: [10, 9, 8]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1);wait(10-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1), print(10-1-1-1)]
+s: {v=20}
+o: [10, 9, 8]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1);wait(10-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1), print(10-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1);wait(10-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1), print(10-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: [print(v*10)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: []
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 200]
+h:ID: 1
+e: [(v=20;(wait(10);print(v*10))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=20;(wait(10);print(v*10)))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(wait(10);print(v*10)), v=20]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(wait(10);print(v*10))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), wait(10)]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), (print(10);wait(10-1))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), wait(10-1), print(10)]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(v*10), wait(10-1)]
+s: {v=20}
+o: [10]
+h:ID: 1
+e: [print(v*10), (print(10-1);wait(10-1-1))]
+s: {v=20}
+o: [10]
+h:ID: 1
+e: [print(v*10), wait(10-1-1), print(10-1)]
+s: {v=20}
+o: [10]
+h:ID: 1
+e: [print(v*10), wait(10-1-1)]
+s: {v=20}
+o: [10, 9]
+h:ID: 1
+e: [print(v*10), (print(10-1-1);wait(10-1-1-1))]
+s: {v=20}
+o: [10, 9]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1), print(10-1-1)]
+s: {v=20}
+o: [10, 9]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1)]
+s: {v=20}
+o: [10, 9, 8]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1);wait(10-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1), print(10-1-1-1)]
+s: {v=20}
+o: [10, 9, 8]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1);wait(10-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1), print(10-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1);wait(10-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1), print(10-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [print(v*10), (print(10-1-1-1-1-1-1-1-1-1);wait(10-1-1-1-1-1-1-1-1-1-1))]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1-1), print(10-1-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+h:ID: 1
+e: [print(v*10), wait(10-1-1-1-1-1-1-1-1-1-1)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: [print(v*10)]
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+h:ID: 1
+e: []
+s: {v=20}
+o: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 200]
+h:ID: 1
+e: [(v=20;(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=20;(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v)))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v)), v=20]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), for(v=0,v<3,v=v+1 )fork((print(v);v=1))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), (v=0;while(v<3)((fork((print(v);v=1));v=v+1)))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=0]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=0}
+o: []
+h:ID: 2
+e: [(print(v);v=1)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=1}
+o: []
+h:ID: 2
+e: [v=1, print(v)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=1}
+o: [0]
+h:ID: 2
+e: [v=1]
+s: {v=0}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=1}
+o: [0]
+h:ID: 2
+e: []
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=1}
+o: [0]
+h:ID: 3
+e: [(print(v);v=1)]
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=2}
+o: [0]
+h:ID: 3
+e: [v=1, print(v)]
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=2}
+o: [0, 1]
+h:ID: 3
+e: [v=1]
+s: {v=1}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=2}
+o: [0, 1]
+h:ID: 3
+e: []
+s: {v=1}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=2}
+o: [0, 1]
+h:ID: 4
+e: [(print(v);v=1)]
+s: {v=2}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=3}
+o: [0, 1]
+h:ID: 4
+e: [v=1, print(v)]
+s: {v=2}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v)]
+s: {v=3}
+o: [0, 1, 2]
+h:ID: 4
+e: [v=1]
+s: {v=2}
+o: [0, 1, 2]
+h:ID: 1
+e: []
+s: {v=3}
+o: [0, 1, 2, 30]
+h:ID: 4
+e: []
+s: {v=1}
+o: [0, 1, 2, 30]
+h:ID: 1
+e: [(v=20;(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=20;(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v)))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v)), v=20]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), for(v=0,v<3,v=v+1 )fork((print(v);v=1))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), (v=0;while(v<3)((fork((print(v);v=1));v=v+1)))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=0]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=0}
+o: []
+h:ID: 2
+e: [(print(v);v=1)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=1}
+o: []
+h:ID: 2
+e: [v=1, print(v)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=1}
+o: [0]
+h:ID: 2
+e: [v=1]
+s: {v=0}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=1}
+o: [0]
+h:ID: 2
+e: []
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=1}
+o: [0]
+h:ID: 3
+e: [(print(v);v=1)]
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=2}
+o: [0]
+h:ID: 3
+e: [v=1, print(v)]
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=2}
+o: [0, 1]
+h:ID: 3
+e: [v=1]
+s: {v=1}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=2}
+o: [0, 1]
+h:ID: 3
+e: []
+s: {v=1}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=2}
+o: [0, 1]
+h:ID: 4
+e: [(print(v);v=1)]
+s: {v=2}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=3}
+o: [0, 1]
+h:ID: 4
+e: [v=1, print(v)]
+s: {v=2}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v)]
+s: {v=3}
+o: [0, 1, 2]
+h:ID: 4
+e: [v=1]
+s: {v=2}
+o: [0, 1, 2]
+h:ID: 1
+e: []
+s: {v=3}
+o: [0, 1, 2, 30]
+h:ID: 4
+e: []
+s: {v=1}
+o: [0, 1, 2, 30]
+h:ID: 1
+e: [(v=20;(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(v=20;(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v)))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v)), v=20]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(for(v=0,v<3,v=v+1 )fork((print(v);v=1));print(10*v))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), for(v=0,v<3,v=v+1 )fork((print(v);v=1))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), (v=0;while(v<3)((fork((print(v);v=1));v=v+1)))]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=0]
+s: {v=20}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=0}
+o: []
+h:ID: 2
+e: [(print(v);v=1)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=1}
+o: []
+h:ID: 2
+e: [v=1, print(v)]
+s: {v=0}
+o: []
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=1}
+o: [0]
+h:ID: 2
+e: [v=1]
+s: {v=0}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=1}
+o: [0]
+h:ID: 2
+e: []
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=1}
+o: [0]
+h:ID: 3
+e: [(print(v);v=1)]
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=2}
+o: [0]
+h:ID: 3
+e: [v=1, print(v)]
+s: {v=1}
+o: [0]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), (fork((print(v);v=1));v=v+1)]
+s: {v=2}
+o: [0, 1]
+h:ID: 3
+e: [v=1]
+s: {v=1}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1, fork((print(v);v=1))]
+s: {v=2}
+o: [0, 1]
+h:ID: 3
+e: []
+s: {v=1}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1)), v=v+1]
+s: {v=2}
+o: [0, 1]
+h:ID: 4
+e: [(print(v);v=1)]
+s: {v=2}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v), while(v<3)((fork((print(v);v=1));v=v+1))]
+s: {v=3}
+o: [0, 1]
+h:ID: 4
+e: [v=1, print(v)]
+s: {v=2}
+o: [0, 1]
+h:ID: 1
+e: [print(10*v)]
+s: {v=3}
+o: [0, 1, 2]
+h:ID: 4
+e: [v=1]
+s: {v=2}
+o: [0, 1, 2]
+h:ID: 1
+e: []
+s: {v=3}
+o: [0, 1, 2, 30]
+h:ID: 4
+e: []
+s: {v=1}
+o: [0, 1, 2, 30]
+h:ID: 1
+e: [(int c;(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c)))))), bool b]
+s: {}
+o: []
+h:ID: 1
+e: [(int c;(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c))))))]
+s: {b=false}
+o: []
+h:ID: 1
+e: [(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c))))), int c]
+s: {b=false}
+o: []
+h:ID: 1
+e: [(int c;(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c)))))), bool b]
+s: {}
+o: []
+h:ID: 1
+e: [(int c;(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c))))))]
+s: {b=false}
+o: []
+h:ID: 1
+e: [(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c))))), int c]
+s: {b=false}
+o: []
+h:ID: 1
+e: [(b=true;(c=b?100:200;(print(c);(c=false?100:200;print(c)))))]
+s: {b=false, c=0}
+o: []
+h:ID: 1
+e: [(c=b?100:200;(print(c);(c=false?100:200;print(c)))), b=true]
+s: {b=false, c=0}
+o: []
+h:ID: 1
+e: [(c=b?100:200;(print(c);(c=false?100:200;print(c))))]
+s: {b=true, c=0}
+o: []
+h:ID: 1
+e: [(print(c);(c=false?100:200;print(c))), c=b?100:200]
+s: {b=true, c=0}
+o: []
+h:ID: 1
+e: [(print(c);(c=false?100:200;print(c))), IF(b) THEN(c=100)ELSE(c=200)]
+s: {b=true, c=0}
+o: []
+h:ID: 1
+e: [(print(c);(c=false?100:200;print(c))), c=100]
+s: {b=true, c=0}
+o: []
+h:ID: 1
+e: [(print(c);(c=false?100:200;print(c)))]
+s: {b=true, c=100}
+o: []
+h:ID: 1
+e: [(c=false?100:200;print(c)), print(c)]
+s: {b=true, c=100}
+o: []
+h:ID: 1
+e: [(c=false?100:200;print(c))]
+s: {b=true, c=100}
+o: [100]
+h:ID: 1
+e: [print(c), c=false?100:200]
+s: {b=true, c=100}
+o: [100]
+h:ID: 1
+e: [print(c), IF(false) THEN(c=100)ELSE(c=200)]
+s: {b=true, c=100}
+o: [100]
+h:ID: 1
+e: [print(c), c=200]
+s: {b=true, c=100}
+o: [100]
+h:ID: 1
+e: [print(c)]
+s: {b=true, c=200}
+o: [100]
+h:ID: 1
+e: []
+s: {b=true, c=200}
+o: [100, 200]
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v)), print(v)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v))]
+s: {a=(1,int), b=(2,int), v=0}
+o: [0]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=rH(b)-2>rH(a)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: [0]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), IF(rH(b)-2>rH(a)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: [0]
+h:	1->1
+	2->2
+ID: 1
+e: []
+s: {a=(1,int), b=(2,int), v=0}
+o: [0, 0]
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))), int v]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) a;(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))))]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))), Ref(int) a]
+s: {v=0}
+o: []
+h:ID: 1
+e: [(v=10;(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))))]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))), v=10]
+s: {a=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(a, 22);(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))))]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a)))), newH(a, 22)]
+s: {a=(0,int), v=10}
+o: []
+h:ID: 1
+e: [(fork((wH(a, 30);(v=32;(print(v);print(rH(a))))));(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a))), fork((wH(a, 30);(v=32;(print(v);print(rH(a))))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(wH(a, 30);(v=32;(print(v);print(rH(a)))))]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 2
+e: [(v=32;(print(v);print(rH(a)))), wH(a, 30)]
+s: {a=(1,int), v=10}
+o: []
+h:	1->22
+ID: 1
+e: [print(rH(a))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 2
+e: [(v=32;(print(v);print(rH(a))))]
+s: {a=(1,int), v=10}
+o: [10]
+h:	1->30
+ID: 1
+e: []
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a))), v=32]
+s: {a=(1,int), v=10}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [(print(v);print(rH(a)))]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a)), print(v)]
+s: {a=(1,int), v=32}
+o: [10, 30]
+h:	1->30
+ID: 2
+e: [print(rH(a))]
+s: {a=(1,int), v=32}
+o: [10, 30, 32]
+h:	1->30
+ID: 2
+e: []
+s: {a=(1,int), v=32}
+o: [10, 30, 32, 30]
+h:	1->30
+ID: 2
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 2
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 2
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=100]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v)), print(v)]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v))]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=rH(b)-2>rH(a)?100:200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), IF(rH(b)-2>rH(a)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v)]
+s: {a=(1,int), b=(2,int), v=200}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: []
+s: {a=(1,int), b=(2,int), v=200}
+o: [100, 200]
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=100]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v)), print(v)]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v))]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=rH(b)-2>rH(a)?100:200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), IF(rH(b)-2>rH(a)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v)]
+s: {a=(1,int), b=(2,int), v=200}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: []
+s: {a=(1,int), b=(2,int), v=200}
+o: [100, 200]
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=100]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v)), print(v)]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v))]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=rH(b)-2>rH(a)?100:200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), IF(rH(b)-2>rH(a)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v)]
+s: {a=(1,int), b=(2,int), v=200}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: []
+s: {a=(1,int), b=(2,int), v=200}
+o: [100, 200]
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=100]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v)), print(v)]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v))]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=rH(b)-2>rH(a)?100:200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), IF(rH(b)-2>rH(a)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v)]
+s: {a=(1,int), b=(2,int), v=200}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: []
+s: {a=(1,int), b=(2,int), v=200}
+o: [100, 200]
+h:	1->1
+	2->2
+ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))), Ref(int) a]
+s: {}
+o: []
+h:ID: 1
+e: [(Ref(int) b;(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))))]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))), Ref(int) b]
+s: {a=(0,int)}
+o: []
+h:ID: 1
+e: [(int v;(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))))]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))), int v]
+s: {a=(0,int), b=(0,int)}
+o: []
+h:ID: 1
+e: [(newH(a, 0);(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))))]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))), newH(a, 0)]
+s: {a=(0,int), b=(0,int), v=0}
+o: []
+h:ID: 1
+e: [(newH(b, 0);(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))))]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))), newH(b, 0)]
+s: {a=(1,int), b=(0,int), v=0}
+o: []
+h:	1->0
+ID: 1
+e: [(wH(a, 1);(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))), wH(a, 1)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->0
+	2->0
+ID: 1
+e: [(wH(b, 2);(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))), wH(b, 2)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->0
+ID: 1
+e: [(v=rH(a)<rH(b)?100:200;(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))))]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=rH(a)<rH(b)?100:200]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), IF(rH(a)<rH(b)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v))), v=100]
+s: {a=(1,int), b=(2,int), v=0}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(print(v);(v=rH(b)-2>rH(a)?100:200;print(v)))]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v)), print(v)]
+s: {a=(1,int), b=(2,int), v=100}
+o: []
+h:	1->1
+	2->2
+ID: 1
+e: [(v=rH(b)-2>rH(a)?100:200;print(v))]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=rH(b)-2>rH(a)?100:200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), IF(rH(b)-2>rH(a)) THEN(v=100)ELSE(v=200)]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v), v=200]
+s: {a=(1,int), b=(2,int), v=100}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: [print(v)]
+s: {a=(1,int), b=(2,int), v=200}
+o: [100]
+h:	1->1
+	2->2
+ID: 1
+e: []
+s: {a=(1,int), b=(2,int), v=200}
+o: [100, 200]
+h:	1->1
+	2->2

@@ -1,0 +1,30 @@
+;1. Write a function to check if an atom is member of a list (the list is non-liniar).
+
+;check(l, el ): | 0 , list is empty
+;               |1 , l- atom and l=el
+;               |0, l- atom and el!=l
+;               |check(l1, el)+....+check(ln, el), otherwise
+
+(defun check (l el)
+    (cond
+        ((NULL l) 0)
+        ((and(atom l)(= l el)) 1)
+        ((atom l) 0)
+        (t (apply #'+ (mapcar #'(lambda (a)(check a el))l)))))
+
+
+;(print (check '(1 2 3(6 5 0 (5 6 7)2) 5) 5))
+;(print (check '() 5))
+
+;checkAtom(l, n): | 'it exists', check(l, n)>0
+;                 | 'it doesn't exists', otherwise
+
+(defun checkAtom (l n)
+    (cond 
+        ((> (check l n) 0) (print "it exists"))
+        (t ( print "it doesn t exist"))
+        )
+    )
+
+(checkAtom '() 5)
+(checkAtom '(1 2 3(6 5 0 (5 6 7)2) 5) 5)

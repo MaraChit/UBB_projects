@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ExecGuiController">
+   <children>
+      <GridPane prefHeight="274.0" prefWidth="570.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.000006103515624" minHeight="0.0" prefHeight="10.799996757507323" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="112.8" minHeight="10.0" prefHeight="102.00000324249268" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="63.600012207031256" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="136.8" minHeight="10.0" prefHeight="128.79999999999998" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ListView fx:id="prgStateId" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="200.0" text="Prg State Id" textFill="#cd13b7" />
+            <TableView fx:id="symbolTbl" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="symbolTblVariable" prefWidth="75.0" text="Var Name" />
+                <TableColumn fx:id="symbolTblValue" prefWidth="75.0" text="Value" />
+              </columns>
+            </TableView>
+            <ListView fx:id="exeStack" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="200.0" text="Symbol Table" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="202.0" text="Exec Stack" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Label text="Heap" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label text="Out" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label text="File Table" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <TableView fx:id="heapTbl" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+              <columns>
+                <TableColumn fx:id="hAddress" prefWidth="75.0" text="Address" />
+                <TableColumn fx:id="hValue" prefWidth="75.0" text="Value" />
+              </columns>
+            </TableView>
+            <ListView fx:id="outList" prefHeight="250.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ListView fx:id="fileTbl" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </GridPane>
+      <VBox>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="561.0" text="No of Prg States" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="noPrgState">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="oneStepExecButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="192.0" text="Execute One Step">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
