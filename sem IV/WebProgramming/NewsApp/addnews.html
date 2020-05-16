@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>News App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function getuser(){
+
+                if(window.sessionStorage.getItem("username")!=null)
+                {
+                
+                    document.getElementById("greet").innerHTML="<a>Hei "+window.sessionStorage.getItem("username")+"</a>";
+					document.getElementById("update").innerHTML="<a href='updatenews.html'>Update news</a>";
+                }
+            }
+            function addNews()
+            {
+                if(window.sessionStorage.getItem("username")==null)
+                    alert("not logged in! cannot add news!");
+                else{
+                    xhrPost = new XMLHttpRequest();
+                    data = {text: document.getElementById("cont").value, 
+                    title: document.getElementById("titlenews").value,
+                    producer: document.getElementById("producer").value,
+                    date: document.getElementById("date").value,
+                    category: document.getElementById("category").value};
+                    console.log(data);
+
+                    jsonData = JSON.stringify(data);
+                    console.log(jsonData);
+                    xhrPost.open("POST", "addnews.php", true);
+                    xhrPost.setRequestHeader("Content-Type", "application/json");
+                    xhrPost.send(jsonData);
+                    alert("News added!");
+                }
+            }
+                        
+        </script>
+        <style>
+        
+        </style> 
+    </head>
+    <body class="background" onload="getuser()">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a class="active" href="addnews.html">Add news</a></li>
+            <li id="greet"><a></a></li>
+			<li id="update"><a></a></li>
+        </ul>
+          
+        <div class="form">
+            <b class="label">Title</b><br> <input type = "text" class="text" id="titlenews"> 
+            <br>
+            <b class="label">Text</b><br> <textarea class="longtext" id="cont" maxlength="255"></textarea>
+            <br>
+            <b class="label">Date</b><br><input type = "date" class="text" id="date">
+            <br>
+			<b class="label">Producer</b><br><input type="text" class="text" id="producer">
+			<br>
+            <b class="label">Category</b><br> <input type = "text" class="text" id="category">
+            <br>
+            <button type="button" class="text" onclick="addNews()">Add news</button>
+            <p id="response"></p>
+        </div>
+
+    </body>
+</html>

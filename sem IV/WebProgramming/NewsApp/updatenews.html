@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>News App </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function getuser(){
+
+                if(window.sessionStorage.getItem("username")!=null)
+                {
+                
+                    document.getElementById("greet").innerHTML="<a>Hei "+window.sessionStorage.getItem("username")+"</a>";
+                }
+            }
+            function updateNews()
+            {
+                if(window.sessionStorage.getItem("username")==null)
+                    alert("not logged in! cannot update news!");
+                else{
+                    xhrPost = new XMLHttpRequest();
+                    data = {
+                        text: document.getElementById("cont").value,
+                        title: document.getElementById("titlenews").value,
+                        producer: document.getElementById("producer").value,
+                        date: document.getElementById("date").value,
+                        category: document.getElementById("category").value,
+                    };
+                    console.log(data);
+
+                    jsonData = JSON.stringify(data);
+                    console.log(jsonData);
+                    xhrPost.open("POST", "updatenews.php", true);
+                    xhrPost.setRequestHeader("Content-Type", "application/json");
+                    xhrPost.send(jsonData);
+                    alert("News updated!");
+                }
+            }
+            /*function setContent()
+            {
+                xhrGet = new XMLHttpRequest();
+                xhrGet.onreadystatechange=function(){
+                    if (this.readyState==4 && this.status==200) {
+                        info = JSON.parse(this.responseText);
+                        console.log(info);
+                        document.getElementById("cont").value = info.text;
+                        document.getElementById("titlenews").value = info.title;
+                        document.getElementById("date").value = info.date;
+						document.getElementById("producer").value = info.producer;
+                        document.getElementById("category").value = info.category;
+						document.getElementById("ID").value = info.id;
+                    }
+                }
+                //xhrGet.open("GET", "getnews.php?id="+window.sessionStorage.getItem("newsId"), true);
+                xhrGet.open("GET", "getnews.php", true);
+                xhrGet.send();
+            }*/
+
+            function load()
+            {
+                //setContent();
+                getuser();
+            }
+                        
+        </script>
+        <style>
+        
+        </style> 
+    </head>
+    <body class="background" onload="load()">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="addnews.html">Add news</a></li>
+			<li><a class="active" href="updatenews.html">Update news</a></li>
+            <li id="greet"><a></a></li>
+        </ul>
+          
+        <div class="form">
+        <b class="label">Title</b><br> <input type = "text" class="text" id="titlenews">
+        <br>
+        <b class="label">Text</b><br> <textarea class="longtext" id="cont" maxlength="255"></textarea>
+        <br>
+        <b class="label">Date</b><br><input type = "date" class="text" id="date">
+        <br>
+		<b class="label">Producer</b><br> <input type = "text" class="text" id="producer">
+        <br>
+        <b class="label">Category</b><br> <input type = "text" class="text" id="category">
+        <br>
+        <button type="button" class="text" onclick="updateNews()">Update news</button>
+        <p id="response"></p>
+        </div>
+
+    </body>
+</html>

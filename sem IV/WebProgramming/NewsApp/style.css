@@ -1,0 +1,81 @@
+.background{
+
+    background-size: cover;
+    margin: 0 0 0 0;
+}
+.text{
+    margin-bottom: 15px;
+    width: 150px;
+    height: 25px;
+}
+
+.longtext{
+    margin-bottom: 15px;
+    width: 150px;
+    height: 80px;
+}
+
+.form{
+    text-align: center;
+    width: 150px;
+    position: fixed;
+    left: 515px;
+    top: 155px;
+
+}
+
+.label{
+    float: left;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width:100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active{
+      color: beige;
+      background-color: #337;
+  }
+
+  #greet{
+    float: right;   
+  }
+
+
+  table, td, tr{
+      
+    border: solid 1px black;
+    border-collapse: collapse;
+  }
+
+  table{
+      margin: 15 15 15 100;
+      width: 350px;
+      height: 100px;
+  }
+
+  .filter{
+    position: fixed;
+    left: 600px;
+    top: 75px;
+  }

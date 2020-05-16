@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>News App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function getuser(){
+                if(window.sessionStorage.getItem("username")!=null)
+                {
+                    document.getElementById("greet").innerHTML="<a>Hei "+window.sessionStorage.getItem("username")+"</a>";
+                    document.getElementById("add").innerHTML="<a href='addnews.html'>Add news</a>";
+					document.getElementById("update").innerHTML="<a href='updatenews.html'>Update news</a>";
+                }
+            }
+
+            function getAllNews(){
+                xhrGet = new XMLHttpRequest();
+                xhrGet.open("GET", "getAllNews.php", true);
+                xhrGet.send();
+                xhrGet.onreadystatechange=function(){
+                    if (this.readyState==4 && this.status==200) {
+                        document.getElementById("content").innerHTML = this.responseText;
+                    }
+                }
+            }
+
+
+            function filter(){
+                if(window.sessionStorage.getItem("filter")!=null)
+                    document.getElementById("previous").innerHTML="Previous: "+window.sessionStorage.getItem("filter");
+                let from = document.getElementById("from").value;
+                let to = document.getElementById("to").value;
+                let category = document.getElementById("category").value
+                window.sessionStorage.setItem("filter", "From: "+from+" To: "+to+" Category: "+category);
+                xhrGet = new XMLHttpRequest();
+                xhrGet.open("GET", "filter.php?from="+from+"&to="+to+"&category="+category, true);
+                xhrGet.send();
+                xhrGet.onreadystatechange=function(){
+                    if (this.readyState==4 && this.status==200) {
+                        console.log(this.responseText);
+                        document.getElementById("content").innerHTML = this.responseText;
+                    }
+                }
+            }
+            function load(){
+                getuser();
+                getAllNews();
+            }
+        </script>    
+    </head>
+    <body class="background" onload="load()">
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li id="add"><a></a></li>
+            <li id="update"><a></a></li>
+            <li id="greet"><a></a></li>
+
+        </ul>
+        <div id="content">
+        </div>
+        <div class="filter">
+            <b class="label">From</b><br><input type = "date" class="text" id="from">
+            <br>
+            <b class="label">To</b><br><input type = "date" class="text" id="to">
+            <br>
+            <b class="label">Category</b><br> <input type = "text" class="text" id="category">
+            <button type="button" onclick="filter()">
+                Filter
+            </button>
+            <p id="previous"></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>News App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function getuser(){
+                if(window.sessionStorage.getItem("username")!=null)
+                {
+                    document.getElementById("greet").innerHTML="<a>Hei "+window.sessionStorage.getItem("username")+"</a>";
+                    document.getElementById("add").innerHTML="<a href='addnews.html'>Add news</a>";
+					document.getElementById("update").innerHTML="<a href='updatenews.html'>Update news</a>";
+					
+                }
+            }
+            function login()
+            {
+                window.sessionStorage.clear();
+                getuser();
+                xhrGet = new XMLHttpRequest();
+                xhrGet.onreadystatechange=function(){
+                    if (this.readyState==4 && this.status==200) {
+                        if(this.responseText == "false")
+                        {
+                            document.getElementById("response").innerHTML="<p>Invalid login data!</p>";
+
+                        }
+                        else
+                        {
+                            console.log(this.responseText);
+                            info = JSON.parse(this.responseText);
+                            document.getElementById("response").innerHTML="<p>Logged in successful!</p>";
+                            window.sessionStorage.setItem("userId", info.id);
+                            window.sessionStorage.setItem("username", info.name);
+                            getuser()
+                        }
+                    }
+                }
+                xhrGet.open("GET", "login.php?user="+document.getElementById("user").value+
+                "&password="+document.getElementById("password").value, true);
+                xhrGet.send();
+                
+            }
+        </script>    
+    </head>
+    <body class="background" onload="getuser()">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="login.html">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li id="add"><a></a></li>
+			<li id="update"><a></a></li>
+            <li id="greet"><a></a></li>
+        </ul>
+        <div class="form">
+        <b class="label">Username</b><br> <input type = "text" class="text" id="user"> 
+        <br>
+        <b class="label">Password</b><br> <input type = "password" class="text" id="password">
+        <br>
+        <button type="button" class="text" onclick="login()">Log in</button>
+        <p id="response"></p>
+        </div>
+
+    </body>
+</html>
