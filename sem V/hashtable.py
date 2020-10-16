@@ -15,9 +15,11 @@ class SymbolTable:
         return elem % self.size
 
     def linear_probing(self, elem, i):
+        #define the linear probing function
         return (self.hash(elem) + i) % self.size
 
     def ascii_code(self, elem):
+        # returns the sum of the ascii_codes of all the chars from the given string
         sum = 0
         for i in range(0,len(elem)):
             sum = sum + ord(elem[i])
@@ -26,30 +28,30 @@ class SymbolTable:
     def add(self, elem):
         #adding a new element in the symbol table
         if isinstance(elem, str):
-            key = self.ascii_code(elem)
+            code = self.ascii_code(elem)
         else:
-            key = elem
+            code = elem
 
         i = 0
-        poz = self.linear_probing(key, i)
+        poz = self.linear_probing(code, i)
         while i < self.size and self.elems[poz] is not None:
             i = i+1
-            poz = self.linear_probing(key, i)
+            poz = self.linear_probing(code, i)
         if poz != self.size:
-            self.elems[poz] = [key, elem]
+            self.elems[poz] = [poz, elem]
 
     def search(self, elem):
         #searching for an element in a symbol table
         if isinstance(elem, str):
-            key = self.ascii_code(elem)
+            code = self.ascii_code(elem)
         else:
-            key = elem
+            code = elem
         i = 0
-        poz = self.linear_probing(key, i)
+        poz = self.linear_probing(code, i)
         while i < self.size:
             if self.elems[poz] is None or self.elems[poz][1] != elem:
                 i = i+1
-                poz = self.linear_probing(key, i)
+                poz = self.linear_probing(code, i)
             else:
                 return True
 
@@ -60,7 +62,7 @@ def test():
 
     st.add(17)
     st.add(6)
-    st.add(1)
+    st.add("naa")
     st.add("ana")
 
     print("Symbol table: \n")
