@@ -101,7 +101,7 @@ class Scanner:
         
 
 def testScan():
-    scanner = Scanner("pb3.txt")
+    scanner = Scanner("pb1_error.txt")
     scanner.scan()
 
         
