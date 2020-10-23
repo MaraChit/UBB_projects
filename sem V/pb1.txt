@@ -1,0 +1,24 @@
+start main <
+	int a;
+	int b;
+	int c;
+	int max;
+
+	get a;
+	get b;
+	get c;
+
+	if(a Greater b)<
+		max Equals a;
+	>
+	else<
+		max Equals b;
+	>
+
+	if(c Greater max)<
+		max Equals c;
+	>
+
+	give max;
+
+>stop main

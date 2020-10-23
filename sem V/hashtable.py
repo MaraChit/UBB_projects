@@ -39,6 +39,8 @@ class SymbolTable:
             poz = self.linear_probing(code, i)
         if poz != self.size:
             self.elems[poz] = [poz, elem]
+        
+        return poz
 
     def search(self, elem):
         #searching for an element in a symbol table
@@ -53,9 +55,9 @@ class SymbolTable:
                 i = i+1
                 poz = self.linear_probing(code, i)
             else:
-                return True
+                return poz
 
-        return False
+        return -1
 
 def test():
     st = SymbolTable(5)
@@ -75,4 +77,4 @@ def test():
     print("checking for value 'ana':")
     print(st.search('ana'))
 
-test()
+#test()
