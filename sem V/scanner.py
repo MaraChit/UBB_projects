@@ -21,16 +21,35 @@ class Scanner:
         self.filename = fileName
         self.currentKeyPIF = 0
         
+    def writeScanningOutput(self):
+        filename = self.filename.split(".")[0] + ".out"
+        file = open(filename, "w")
+        st = self.symbolTable.getData()
+        file.write("--- Symbol Table ---\n")
+        file.write(str(st))
+
+        file.write("\n--- PIF ---\n")
+        file.write(str(self.programInternalForm))
+        
+        file.close()
+        
     def isConstant(self,token):
         if token[0] == 0 and len(token) != 1:
             return False
         for char in token:
             if char not in "1234567890":
                 return False
-        return True  
+        return True
+    
+    def isConstantString(self,token):
+        if token[0] != '"':
+            return False
+        for i in range (1,len(token)-1):
+            if token[i] not in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890" :
+                return False
+        return True
     
     def isValidIdentifier(self,token):
-        print(token)
         if token[0] not in "qwertyuiopasdfghjklzxcvbnm":
             return False
         for char in token[1:]:
@@ -77,7 +96,16 @@ class Scanner:
                 elif self.isConstant(t):
                     if self.symbolTable.search(t) == -1:
                         poz = self.symbolTable.add(t)
-                        print(poz)
+                        self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                        self.currentKeyPIF +=1
+                    else:
+                        poz = self.symbolTable.search(t)
+                        self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                        self.currentKeyPIF +=1
+                elif self.isConstantString(t):
+                    print(356789)
+                    if self.symbolTable.search(t) == -1:
+                        poz = self.symbolTable.add(t)
                         self.programInternalForm[self.currentKeyPIF]=['Const', poz]
                         self.currentKeyPIF +=1
                     else:
@@ -96,19 +124,23 @@ class Scanner:
                 tokenList = self.detectTokens()
                 self.classifyToken(tokenList, lineNo)
                 
+        self.writeScanningOutput()       
         print(self.programInternalForm)
         print(self.symbolTable)
         
 
 def testScan():
-    scanner = Scanner("pb1_error.txt")
-    scanner.scan()
-
-        
-  
-testScan()                      
-                
-                
-                
-             
+    scanner1 = Scanner("pb1.txt")
+    scanner1.scan()
     
+    scanner2 = Scanner("pb2.txt")
+    scanner2.scan()
+    
+    scanner3 = Scanner("pb3.txt")
+    scanner3.scan()
+    
+    scanner1_err = Scanner("pb1_error.txt")
+    scanner1_err.scan()
+    
+     
+testScan()                      

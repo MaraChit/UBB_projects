@@ -20,5 +20,6 @@ start main <
 	>
 
 	give max;
+	give "Maximum"
 
 >stop main

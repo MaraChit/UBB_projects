@@ -9,6 +9,9 @@ class SymbolTable:
         for symbol in self.elems:
             st += str(symbol) + "\n"
         return st
+    
+    def getData(self):
+        return self.elems
 
     def hash(self, elem):
         #define a hash function
