@@ -26,6 +26,7 @@ class Scanner:
         file = open(filename, "w")
         st = self.symbolTable.getData()
         file.write("--- Symbol Table ---\n")
+        file.write("--- using a hashtable with open addressing (linear probing) ---\n" )
         file.write(str(st))
 
         file.write("\n--- PIF ---\n")
