@@ -19,5 +19,5 @@ start main <
 	>
 
 	give max;
-	give "const_"
+	give "const
 >stop main

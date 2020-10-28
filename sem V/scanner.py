@@ -68,144 +68,6 @@ class Scanner:
     
     def detectTokens(self):
         return self.input.split()
-    '''   
-    def classifyToken(self, tokenList, lineNo):
-        for token in tokenList:
-            tokens = re.split('<|>|;|\(|\)|\[|\]|\n|\t',token)
-            for t in tokens:
-                if t == '':
-                    continue
-                if self.isOperator(t):
-                    self.programInternalForm[self.currentKeyPIF] = [t, -1]
-                    self.currentKeyPIF += 1
-                elif self.isReservedWord(t):
-                    self.programInternalForm[self.currentKeyPIF] = [t, -1]
-                    self.currentKeyPIF += 1
-                elif self.isSeparator(t):
-                    self.programInternalForm[self.currentKeyPIF] = [t, -1]
-                    self.currentKeyPIF += 1
-                elif self.isValidIdentifier(t):
-                    if self.symbolTable.search(t) == -1:
-                        poz = self.symbolTable.add(t)
-                        self.programInternalForm[self.currentKeyPIF]=['Id', poz]
-                        self.currentKeyPIF +=1
-                    else:
-                        poz = self.symbolTable.search(t)
-                        self.programInternalForm[self.currentKeyPIF]=['Id', poz]
-                        self.currentKeyPIF +=1
-                elif self.isConstant(t):
-                    if self.symbolTable.search(t) == -1:
-                        poz = self.symbolTable.add(t)
-                        self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                        self.currentKeyPIF +=1
-                    else:
-                        poz = self.symbolTable.search(t)
-                        self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                        self.currentKeyPIF +=1
-                elif self.isConstantString(t):
-                    print(356789)
-                    if self.symbolTable.search(t) == -1:
-                        poz = self.symbolTable.add(t)
-                        self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                        self.currentKeyPIF +=1
-                    else:
-                        poz = self.symbolTable.search(t)
-                        self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                        self.currentKeyPIF +=1
-                else:
-                    raise Exception("Lexical error found! Invalid token '"+ t +"'"+" at line "+ str(lineNo))
-    
-    
-    def classifyToken(self, tokenList, lineNo):
-        for token in tokenList:
-            word = ""
-            if token == '':
-                continue
-            for t in token:
-                if self.isSeparator(t) == False:
-                     word = word + t
-                     if word == token:
-                         if self.isOperator(word):
-                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
-                            self.currentKeyPIF += 1
-                         elif self.isReservedWord(word):
-                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
-                            self.currentKeyPIF += 1
-                         elif self.isValidIdentifier(word):
-                            if self.symbolTable.search(word) == -1:
-                                poz = self.symbolTable.add(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
-                                self.currentKeyPIF +=1
-                            else:
-                                poz = self.symbolTable.search(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
-                                self.currentKeyPIF +=1
-                         elif self.isConstant(word):
-                            if self.symbolTable.search(word) == -1:
-                                poz = self.symbolTable.add(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                            else:
-                                poz = self.symbolTable.search(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                         elif self.isConstantString(word):
-                            if self.symbolTable.search(word) == -1:
-                                poz = self.symbolTable.add(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                            else:
-                                poz = self.symbolTable.search(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                         else:
-                            raise Exception("Lexical error found! Invalid token '"+ word +"'"+" at line "+ str(lineNo))
-                            
-                         word = ""
-                else:
-                    self.programInternalForm[self.currentKeyPIF] = [t, -1]
-                    self.currentKeyPIF += 1
-                    
-                    if word != '':
-                        if self.isOperator(word):
-                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
-                            self.currentKeyPIF += 1
-                        elif self.isReservedWord(word):
-                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
-                            self.currentKeyPIF += 1
-                        elif self.isValidIdentifier(word):
-                            if self.symbolTable.search(word) == -1:
-                                poz = self.symbolTable.add(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
-                                self.currentKeyPIF +=1
-                            else:
-                                poz = self.symbolTable.search(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
-                                self.currentKeyPIF +=1
-                        elif self.isConstant(word):
-                            if self.symbolTable.search(word) == -1:
-                                poz = self.symbolTable.add(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                            else:
-                                poz = self.symbolTable.search(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                        elif self.isConstantString(word):
-                            if self.symbolTable.search(word) == -1:
-                                poz = self.symbolTable.add(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                            else:
-                                poz = self.symbolTable.search(word)
-                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
-                                self.currentKeyPIF +=1
-                        else:
-                            raise Exception("Lexical error found! Invalid token '"+ word +"'"+" at line "+ str(lineNo))
-                            
-                        word = ""
-                    
-    '''
 
     def classifyToken(self, tokenList, lineNo):
         for token in tokenList:
@@ -275,17 +137,15 @@ class Scanner:
         
 
 def testScan():
-    '''
+    
     scanner1 = Scanner("pb1.txt")
     scanner1.scan()
     
     scanner2 = Scanner("pb2.txt")
-    scanner2.scan()
-    
+    scanner2.scan()   
     
     scanner3 = Scanner("pb3.txt")
     scanner3.scan()
-    '''
     
     scanner1_err = Scanner("pb1_error.txt")
     scanner1_err.scan()
