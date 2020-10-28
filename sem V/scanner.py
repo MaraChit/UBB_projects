@@ -4,7 +4,7 @@ Created on Thu Oct 22 19:45:06 2020
 
 @author: Ioana
 """
-import re
+#import re
 from hashtable import SymbolTable
 
 class Scanner:
@@ -14,7 +14,7 @@ class Scanner:
         self.programInternalForm = {}
         self.operators = ["Plus", "Minus", "Multiply", "Div", "Mod", "Equals", "Greater", "GreaterOrEqual",
                                 "Smaller", "SmallerOrEqual", "EqualEqual", "Different"]
-        self.separators = ['[', ']', '<', '>', ';', '(', ')', '"', " "]
+        self.separators = ['[', ']', '<', '>', ';', '(', ')']
         self.reservedWords = ["false", "true", "while", "int", "bool", "string",
                                     "get", "give", "start", "stop", "if", "else"]
         self.input = ""
@@ -42,7 +42,7 @@ class Scanner:
         return True
     
     def isConstantString(self,token):
-        if token[0] != '"':
+        if token[-1] != '"' or token[0] != '"':
             return False
         for i in range (1,len(token)-1):
             if token[i] not in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890" :
@@ -68,7 +68,7 @@ class Scanner:
     
     def detectTokens(self):
         return self.input.split()
-        
+    '''   
     def classifyToken(self, tokenList, lineNo):
         for token in tokenList:
             tokens = re.split('<|>|;|\(|\)|\[|\]|\n|\t',token)
@@ -114,7 +114,152 @@ class Scanner:
                         self.currentKeyPIF +=1
                 else:
                     raise Exception("Lexical error found! Invalid token '"+ t +"'"+" at line "+ str(lineNo))
+    
+    
+    def classifyToken(self, tokenList, lineNo):
+        for token in tokenList:
+            word = ""
+            if token == '':
+                continue
+            for t in token:
+                if self.isSeparator(t) == False:
+                     word = word + t
+                     if word == token:
+                         if self.isOperator(word):
+                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
+                            self.currentKeyPIF += 1
+                         elif self.isReservedWord(word):
+                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
+                            self.currentKeyPIF += 1
+                         elif self.isValidIdentifier(word):
+                            if self.symbolTable.search(word) == -1:
+                                poz = self.symbolTable.add(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
+                                self.currentKeyPIF +=1
+                            else:
+                                poz = self.symbolTable.search(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
+                                self.currentKeyPIF +=1
+                         elif self.isConstant(word):
+                            if self.symbolTable.search(word) == -1:
+                                poz = self.symbolTable.add(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                            else:
+                                poz = self.symbolTable.search(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                         elif self.isConstantString(word):
+                            if self.symbolTable.search(word) == -1:
+                                poz = self.symbolTable.add(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                            else:
+                                poz = self.symbolTable.search(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                         else:
+                            raise Exception("Lexical error found! Invalid token '"+ word +"'"+" at line "+ str(lineNo))
+                            
+                         word = ""
+                else:
+                    self.programInternalForm[self.currentKeyPIF] = [t, -1]
+                    self.currentKeyPIF += 1
+                    
+                    if word != '':
+                        if self.isOperator(word):
+                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
+                            self.currentKeyPIF += 1
+                        elif self.isReservedWord(word):
+                            self.programInternalForm[self.currentKeyPIF] = [word, -1]
+                            self.currentKeyPIF += 1
+                        elif self.isValidIdentifier(word):
+                            if self.symbolTable.search(word) == -1:
+                                poz = self.symbolTable.add(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
+                                self.currentKeyPIF +=1
+                            else:
+                                poz = self.symbolTable.search(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Id', poz]
+                                self.currentKeyPIF +=1
+                        elif self.isConstant(word):
+                            if self.symbolTable.search(word) == -1:
+                                poz = self.symbolTable.add(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                            else:
+                                poz = self.symbolTable.search(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                        elif self.isConstantString(word):
+                            if self.symbolTable.search(word) == -1:
+                                poz = self.symbolTable.add(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                            else:
+                                poz = self.symbolTable.search(word)
+                                self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                                self.currentKeyPIF +=1
+                        else:
+                            raise Exception("Lexical error found! Invalid token '"+ word +"'"+" at line "+ str(lineNo))
+                            
+                        word = ""
+                    
+    '''
+
+    def classifyToken(self, tokenList, lineNo):
+        for token in tokenList:
+            word = ""
+            if token == '':
+                continue
+            for t in token:
+                if self.isSeparator(t) == False:
+                     word = word + t
+                     
+                else:
+                    self.programInternalForm[self.currentKeyPIF] = [t, -1]
+                    self.currentKeyPIF += 1
+                    
+                if word != '' and self.isSeparator(t) or word == token: 
+                    if self.isOperator(word):
+                        self.programInternalForm[self.currentKeyPIF] = [word, -1]
+                        self.currentKeyPIF += 1
+                    elif self.isReservedWord(word):
+                        self.programInternalForm[self.currentKeyPIF] = [word, -1]
+                        self.currentKeyPIF += 1
+                    elif self.isValidIdentifier(word):
+                        if self.symbolTable.search(word) == -1:
+                            poz = self.symbolTable.add(word)
+                            self.programInternalForm[self.currentKeyPIF]=['Id', poz]
+                            self.currentKeyPIF +=1
+                        else:
+                            poz = self.symbolTable.search(word)
+                            self.programInternalForm[self.currentKeyPIF]=['Id', poz]
+                            self.currentKeyPIF +=1
+                    elif self.isConstant(word):
+                        if self.symbolTable.search(word) == -1:
+                            poz = self.symbolTable.add(word)
+                            self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                            self.currentKeyPIF +=1
+                        else:
+                            poz = self.symbolTable.search(word)
+                            self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                            self.currentKeyPIF +=1
+                    elif self.isConstantString(word):
+                        if self.symbolTable.search(word) == -1:
+                            poz = self.symbolTable.add(word)
+                            self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                            self.currentKeyPIF +=1
+                        else:
+                            poz = self.symbolTable.search(word)
+                            self.programInternalForm[self.currentKeyPIF]=['Const', poz]
+                            self.currentKeyPIF +=1
+                    else:
+                        raise Exception("Lexical error found! Invalid token '"+ word +"'"+" at line "+ str(lineNo))
                         
+                    word = ""
+                    
+                
     def scan(self):
         with open(self.filename, 'r') as file:
             lineNo = 0
@@ -130,17 +275,19 @@ class Scanner:
         
 
 def testScan():
+    '''
     scanner1 = Scanner("pb1.txt")
     scanner1.scan()
     
     scanner2 = Scanner("pb2.txt")
     scanner2.scan()
     
+    
     scanner3 = Scanner("pb3.txt")
     scanner3.scan()
+    '''
     
     scanner1_err = Scanner("pb1_error.txt")
     scanner1_err.scan()
     
-     
 testScan()                      

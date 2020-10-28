@@ -2,11 +2,11 @@ start main <
 	int a;
 	int b;
 	int c;
-	int Max;
+	int max;
 
 	get a;
 	get b;
-	get _c;
+	get c;
 
 	if(a Greater b)<
 		max Equals a;
@@ -19,5 +19,5 @@ start main <
 	>
 
 	give max;
-
+	give "const_"
 >stop main
