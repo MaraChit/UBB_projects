@@ -71,7 +71,7 @@ class FA:
         for f in self.initial:
             print(f)
 
-    def displayFinalState(self):
+    def displayFinalStates(self):
         print("Final states:")
         for f in self.final:
             print(f)
