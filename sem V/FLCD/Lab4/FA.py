@@ -66,12 +66,12 @@ class FA:
         for key in self.fa:
             print(key[0] + "->" + key[1] + ": " + self.fa[key[0],key[1]])
 
-    def displayInititalSt(self):
+    def displayInititalState(self):
         print("Initial states:")
         for f in self.initial:
             print(f)
 
-    def displayFinalSt(self):
+    def displayFinalState(self):
         print("Final states:")
         for f in self.final:
             print(f)
@@ -86,9 +86,9 @@ class FA:
             elif com == "2":
                 self.displayAlphabet()
             elif com == "3":
-                self.displayInititalSt()
+                self.displayInititalState()
             elif com  == "4":
-                self.displayFinalSt()
+                self.displayFinalState()
             elif com == "5":
                 self.displayTransitions()
             elif com == "0":
