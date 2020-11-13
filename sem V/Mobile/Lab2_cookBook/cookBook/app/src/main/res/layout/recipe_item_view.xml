@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        >
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="Recipe Name"/>
+        <TextView
+            android:id="@+id/text_view_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name"
+            android:textStyle="italic"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:text="Difficulty" />
+        <TextView
+            android:id="@+id/text_view_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_difficulty"
+            android:layout_centerHorizontal="true"
+            android:text="Ingredients" />
+        <TextView
+            android:id="@+id/text_view_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_ingredients"
+            android:layout_centerHorizontal="true"
+            android:text="Instructions" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

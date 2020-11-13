@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<EditText
+    android:id="@+id/recipeNameEditInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="30dp"
+    android:ems="15"
+    android:hint="recipe name"
+    android:inputType="textPersonName"
+    />
+
+<EditText
+    android:id="@+id/difficultyEditInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="35dp"
+    android:ems="15"
+    android:hint="difficulty"
+    android:inputType="textPersonName"
+    app:layout_constraintTop_toBottomOf="@+id/recipeNameEditInput" />
+
+<EditText
+    android:id="@+id/ingredientsEditInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="35dp"
+    android:ems="15"
+    android:hint="ingredients"
+    android:inputType="textPersonName"
+    app:layout_constraintTop_toBottomOf="@+id/difficultyEditInput" />
+
+<EditText
+    android:id="@+id/instructionsEditInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="50dp"
+    android:ems="15"
+    android:hint="instructions"
+    android:inputType="textPersonName"
+    app:layout_constraintTop_toBottomOf="@+id/ingredientsEditInput" />
+
+<Button
+    android:id="@+id/updateBtn"
+    android:layout_width="170dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="80dp"
+    android:background="@color/colorAccent"
+    android:text="Update"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toTopOf="@+id/deleteBtn2"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/instructionsEditInput" />
+
+<Button
+    android:id="@+id/deleteBtn2"
+    android:layout_width="170dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorAccent"
+    android:text="Delete"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toTopOf="@+id/cancelEditBtn"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
+
+<Button
+    android:id="@+id/cancelEditBtn"
+    android:layout_width="170dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="50dp"
+    android:background="@color/colorAccent"
+    android:text="Cancel"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/deleteBtn2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
