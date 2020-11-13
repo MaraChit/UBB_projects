@@ -3,8 +3,8 @@ x y
 q1
 q3 q4
 q1 q2 x
-q2 q3 x
-q1 q3 y
-q3 q4 x
+q2 q3 y
+q3 q4 y
+q4 q4 x
 
 

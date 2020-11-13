@@ -1,0 +1,20 @@
+States:
+states = state {state}
+state = letter{number}
+letter =  "a" | "b" | ... | "z" 
+number =  nonzero-digit { "0" | nonzero_digit }
+nonzero-digit =  "1" | … | "9"
+
+Alphabet:
+alphabet = elem {alphabet}
+elem = letter | number
+
+Initial State:
+initialState = state
+
+Final State:
+finalStates = state {state}
+
+Transitions:
+transitions = state state elem “\n” {transitions}
+

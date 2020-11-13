@@ -13,6 +13,7 @@ class FA:
         self.final = []
         self.fa ={}
         self.readFromFile()
+        self.dfa = True
 
     def readFromFile(self):
         filename = "fa.txt"
@@ -39,8 +40,8 @@ class FA:
         for line in f:
             elems=line[:-1].split(" ")
             if(len(elems)>2):
-                self.fa[elems[0],elems[1]]=elems[2]
-        
+                self.fa[elems[0],elems[1]]=(elems[2]).strip("\n")
+                
 
     def printMeniu(self):
         print()
@@ -49,6 +50,7 @@ class FA:
         print("3 - Display initial state" )
         print("4 - Display final states")
         print("5 - Display transitions")
+        print("6 - Check sequence")
         print("0 - Exit")
 
     def displayStates(self):
@@ -76,6 +78,40 @@ class FA:
         for f in self.final:
             print(f)
 
+    def isDeterministic(self):
+        visited = []
+        for elem in self.fa:
+            if elem[0] in visited:
+                return False
+            visited.append(elem[0])
+        return True
+    
+    def verifySequence(self, sequence):
+        
+        if self.isDeterministic() == False:
+            return False
+        
+        currentState = self.initial[0]
+        lenSeq = len(sequence)
+        ok = False
+        
+        for seq in sequence:
+            ok = False
+            for transition in self.fa.keys():
+                if self.fa[transition] == seq and currentState == transition[0]:
+                    ok = True
+                    currentState = transition[1]
+                    break
+            if not ok:
+                break
+            else:
+                lenSeq -= 1
+                
+        if currentState in self.final and lenSeq == 0:
+            return True
+        else:
+            return False
+
     def start(self):
         com = -1
         while com != "0":
@@ -93,6 +129,10 @@ class FA:
                 self.displayTransitions()
             elif com == "0":
                 print("Exit")
+            elif com== "6":
+                print(fa.verifySequence("xyyx"))
+                print(fa.verifySequence("xyy"))
+                print(fa.verifySequence("xyyxyy"))
             else:
                 print("Unknown command.Choose something from the menu")
 
