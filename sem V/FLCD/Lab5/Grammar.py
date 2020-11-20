@@ -58,6 +58,23 @@ class Grammar:
     def getProductions(self):
         return self.productions
 
+    def getProductionsForNonTerminal(self, key):
+        return self.productions[key]
+
+    def printProductionForNonTerminal(self, key):
+        productionString = ""
+        productionString = productionString + key + " -> "
+        size = 0
+        for p in self.productions[key]:
+            size += 1
+            for elem in p:
+                productionString = productionString + elem + " "
+            if size == len(self.productions[key]):
+                productionString = productionString + "\n"
+            else:
+                productionString = productionString + " | "
+        return productionString
+
     def printProductions(self):
         productionString = ""
         for prod in self.productions.keys():
@@ -80,6 +97,7 @@ def printOptions():
     print("2.Print non terminals")
     print("3.Print starting symbol")
     print("4.Print transitions")
+    print("5.Print production for a non terminal")
     print("0.Exit")
     print("")
 
@@ -98,6 +116,9 @@ if __name__ == '__main__':
                 print(grammar.getStartingSymbol())
             elif command == 4:
                 print(grammar.printProductions())
+            elif command == 5:
+                nonterm = input("Specify nonterminal: ")
+                print(grammar.printProductionForNonTerminal(nonterm))
             elif command == 0:
                 break
             else:
