@@ -61,7 +61,7 @@ class Grammar:
     def getProductionsForNonTerminal(self, key):
         return self.productions[key]
 
-    def printProductionForNonTerminal(self, key):
+    def printProductionsForNonTerminal(self, key):
         productionString = ""
         productionString = productionString + key + " -> "
         size = 0
@@ -118,7 +118,7 @@ if __name__ == '__main__':
                 print(grammar.printProductions())
             elif command == 5:
                 nonterm = input("Specify nonterminal: ")
-                print(grammar.printProductionForNonTerminal(nonterm))
+                print(grammar.printProductionsForNonTerminal(nonterm))
             elif command == 0:
                 break
             else:
