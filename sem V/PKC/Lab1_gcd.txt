@@ -1,0 +1,163 @@
+---
+format: markdown
+title: GCD
+---
+This program contains 3 different functions that compute the gcd of two numbers and one test function that calls the other three in order to get the gcd as well as the duration of each algorithm.
+
+The first algorithm uses the substraction method in order to find the gcd.
+First, it checks if any of the two given numbers is 0. If any of them is 0, the other number will be returned because 0 can be divided with anything, thus the other number is the greatest common divisor.
+If none of them is 0, we have to substract the smaller one from the bigger one, the bigger one becoming the result of this substraction. Then we repeat this step until the two numbers are equal.
+
+example: consider a=12 and b=50
+step 1: 12 != 0 and 50 != 0 
+step 2: b>a =>b=50-12 => b=38
+step 3: b>a =>b=38-12 => b=26
+step 4: b>a =>b=26-12 => b=14
+step 5: b>a =>b=14-12 => b=2
+step 6: a>b =>a=12-2 =>a=10
+step 7: a>b =>a=10-2 =>a=8
+step 8: a>b =>a=8-2 =>a=6
+step 9: a>b =>a=6-2 =>a=4
+step 10: a>b =>a=4-2 =>a=2
+step 11: a=b=2 => gcd(12,50) = 2
+
+~~~~~{.python}
+<<substraction algorithm>>=
+def gcd_substraction(a,b):
+    
+    if a == 0:
+        return b
+    if b == 0:
+        return a
+    
+    while a != b:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
+    return a
+@
+~~~~~
+The second algorithm also checks if any of the numbers in 0, returning the other one if that condition is satisfied. Then it sets a variable ($gcd$) on 1. While both numbers can be divided by two and have the rest 0, we divide the numbers by 2 and we multiply the gcd with 2. We repeat this step until at least one of the two numbers is odd. By doing this, we ensure that the gcd will contain all the powers of two that can be found in both numbers.
+When at least one number is odd we check which one of them is greater and we put that value into $a$.
+Then we go with an index that starts from 3 (since it's clear that 2 can't be a common divisor anymore) and ends at $a$.The index increases with 2 every time (to ignore all even numbers in the range as they can't be common divisors).
+Each time the index is a common divisor of both $a$ and $b$, we multiply the $gcd$ with the index and we divide $a$ and $b$ by the index.
+When the index reaches $a$ it means that we have passed through all the divisors of the numbers and we can return the $gcd$.
+
+example: consider a=16 and b = 40
+step1: 16 != 0 and 40 != 0
+step2: a%2=0 and b%2=0 => a=16/2 and b=40/2  and gcd = 1*2 => a=8 and b=20 and gcd = 2
+step3: a%2=0 and b%2=0 => a=8/2 and b=20/2 and gcd=2*2 => a=4 and b =10 and gcd=4
+step4: a%2=0 and b%2=0 => a=4/2 and b=10/2 and gcd=4*2 => a=2 and b=5 and gcd=8
+step5: a%2=0 but b%2!=0 => there are no more even numbers as common divisors
+step6: a<b => a = 5 and b=2
+step7: i = 3 
+step8: a % i != 0 and b % i != 0 => i = i + 2 => i = 5
+step9: a % i = 0 but b % i != 0 => i = i + 2 => i = 7
+step 10: i>a => no other common divisors found => gcd(16,40) = 8
+
+~~~~~{.python}
+<<decomposing into factors>>=
+def gcd_divisor(a,b):
+    
+    if a == 0:
+        return b
+    if b == 0:
+        return a
+    
+    gcd = 1
+    
+    while a%2 == 0 and b%2 == 0:
+        a = a/2
+        b = b/2
+        gcd = gcd*2
+    
+    if (a < b):
+        c = a
+        a = b
+        b = c
+        
+    i = 3    
+    while i <= a:
+        if a%i == 0 and b%i == 0:
+            gcd = gcd * i
+            a = a/i
+            b = b/i
+        i = i+2
+        
+    return gcd
+@
+~~~~~
+
+Third algorithm also starts by checking if any of the numbers is 0 and return the other one if the condition is satisfied.
+Then, while one of them is different from 0 (I choose $b$, but it would have worked with $a$ as well), we take the rest of the divison of $a$ and $b$. Then $a$ takes the value of $b$ and $b$ takes the value of the rest. This step is repeated until $b$ becomes 0. The gcd of the two numbers will be the previous rest before finding 0, meaning that the gcd will be the last value of $a$.
+
+example: a = 40 and b = 12
+step1: a!=0 and b!= 0
+step2: b!=0 => c=a%b and a=b and b=c => c=4 and a=12 and b=4
+step3: b!=0 => c=a%b and a=b and b=c => c=0 and a=4 and b=0
+step4: b = 0 => gcd(40,12)=a => gcd(40,12) = 4
+
+~~~~~{.python}
+<<euclidian algorithm>>=
+def gcd_euclidian(a,b):
+    
+    if a == 0:
+        return b
+    if b == 0:
+        return a
+    
+    while b!=0 :
+        c = a % b
+        a = b
+        b = c
+    return a
+@
+~~~~~
+
+We must import time.
+
+~~~~~{.python}
+<<time>>=
+import time
+@
+~~~~~
+
+The test function will call each one of these three algorithms and will compute the gcd of two numbers. It will also show how long each algorithm took before finding the gcd of the same two numbers.
+
+~~~~~{.python}
+
+<<*>>=
+<<time>>
+<<euclidian algorithm>>
+<<decomposing into factors>>
+<<substraction algorithm>>
+ 
+print("We will compute the gcd of 256 and 44 in three ways and see how long each of them takes.")
+print("First algorithm:")
+time1 = time.time()
+print(gcd_divisor(256224, 44))
+time2 = time.time()
+print(time2-time1)
+    
+print("Second algorithm:")
+time1 = time.time()
+print(gcd_euclidian(256224, 44))
+time2 = time.time()
+print(time2-time1)
+    
+print("Third algorithm:")
+time1 = time.time()
+print(gcd_substraction(256224, 44))
+time2 = time.time()
+print(time2-time1)
+
+print("Euclidian algorithm works for large numbers as well. We will use 25^2020 and 5^199")
+time1 = time.time()
+print(gcd_euclidian(pow(25,2020),pow(5,199)))
+time2 = time.time()
+print(time2-time1)
+@
+~~~~~
+
+

@@ -1,0 +1,134 @@
+---
+format: markdown
+title: Laboratory 2
+---
+8. Algorithm for determining all bases b with respect to which a composite odd number n is pseudoprime. 
+Use the repeated squaring modular exponentiation method.
+(my name is Chitimus Mara Ioana => 17 % 10 + 1 = 8)
+
+What is a pseudoprime?
+
+An odd composite natural numbern is called pseudoprime to the base b if (b,n) = 1 and b^(n-1) = 1 (mod n) holds. A pseudoprime is a 
+probable prime number that is not actually prime, but it pretends by passing the condition b^(n-1) = 1 (mod n). This condition was 
+stated by Fermat in Fermat's little theorem.
+
+Fermat's little theorem:
+
+If one wants to test whether n is prime, then one must pick random integers b (not divisible by n) and see whether the equality holds. 
+If the equality does not hold for a value of b, then n is composite. This congruence is unlikely to hold for a random b if n is 
+composite. Therefore, if the equality does hold for one or more values of b, then we say that n is probably prime. 
+Usually, b is picked based on the condition: 1 < b < n-1.
+
+Since my number n is stated to be composite odd it is clear that not all bases b will work in order for the condition to hold. Thus,
+my algorithm will check Fermat's condition for all bases b in the interval (1, n-1), using the repeated squaring modular exponentiation
+method. It will also check for each base to be prime in regards to n.
+
+The repeated squaring modular exponentiation method:
+
+This method computes b^k % n in a way that works on b,k natural large numbers. For this method, k must be written in binary then, for
+each power of 2, we compute the modulo n by squaring the previous modulo. In the end, compute the product of all the obtained modulos 
+(only from powers of 2 that are found in the binary version of k) and calculate modulo n again. This will be the final result. 
+
+The next function receives k (a natural number) and returns a list with all the powers of two that are found in its binary form.
+
+~~~~~{.python}
+<<powers>>=
+def returnListOfPowers(k):
+    k = bin(k)[2:]
+    position = len(k)-1
+    positionList = []
+    for i in k:
+        if i == '1':
+            positionList.append(position)
+        position -=1
+    return positionList
+@
+~~~~~
+
+The next function computes  b^k % n using the repeated squaring modular exponentiation method as described at the begining of this document.
+Input: n,k,b (integers)
+Output: output = b^k%n (integer)
+
+~~~~~{.python}
+<<method>>=
+def rsmeMethod(n,k,b):
+    
+    output = 1
+    if k == 0:
+        return output
+    
+    powers = returnListOfPowers(k)
+    
+    modulo = b
+    if powers[-1] == 0:
+        output = modulo
+        
+    i = 1
+    while i<= powers[0]:
+        modulo = modulo * modulo % n
+        if i in powers:
+            output = output * modulo % n
+        i+=1
+        
+    return output
+@
+~~~~~
+
+The next function is an algorithm from the previous laboratory. It calculates the greatest common divisor of two numbers. This algorithm will be used to verify that the given number n and the found base b are coprime.
+
+~~~~~{.python}
+<<gcd>>=
+def gcd(n,b):
+    if n == 0:
+        return b
+    if b == 0:
+        return n
+    
+    while b!=0 :
+        c = n % b
+        n = b
+        b = c
+    return n
+@
+~~~~~
+
+The next function takes each base b ( where 1 < b < n-1) and verifies if Fermat's condition for a number to be pseudoprime. So it verifies that b^(n-1)%n = 1. It also calls the gcd function to make sure that n and b are coprime.
+
+~~~~~{.python}
+<<fermat>>=
+def fermat(n):
+    bases = []
+    for b in range (2, n-1):
+         if rsmeMethod(n,n-1,b) == 1 and gcd(n,b) == 1:
+             bases.append(b)
+    
+    return bases
+@
+~~~~~
+
+And for the testing part : I will check if the number of witnesses of nonprimality is less than half of the possible number of bases. If the witnesses are less than half, the program did not find all the bases that satisfy the condition. The number of witnesses will be computed by substractig from n-4 the length of the list containing the bases with respect to which the given number n is pseudoprime.
+
+~~~~~{.python}
+<<*>>=
+<<fermat>>
+<<gcd>>
+<<powers>>
+<<method>>
+
+n = 153
+print("The given number is: ")
+print(n)
+print("The bases with respect to which the given number is pseudoprime are: ")
+print(fermat(n))
+
+print("The number of witnesses of nonprimality :")
+witnesses = n-4 - len(fermat(n))
+print(witnesses)
+    
+print("Is the number of witnesses of nonprimality larger than half of the possible bases?")
+if (n-4)/2 > witnesses:
+	print("False")
+else:
+        print("True")
+@
+~~~~~ 
