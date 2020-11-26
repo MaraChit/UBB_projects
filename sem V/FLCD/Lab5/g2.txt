@@ -1,5 +1,5 @@
 program declaration type type1 arrayType statementList statement assignStmt ifStmt whileStmt elseStmt expression operator oper relation condition
-start stop int string bool ; [ ] ( ) < > Plus Minus Multiply Div Mod Equals Greater GreaterOrEqual Smaller SmallerOrEqual EqualEqual Different And Or if else while
+start stop int string bool ; [ ] ( ) < > Plus Minus Multiply Div Mod Equals Greater GreaterOrEqual Smaller SmallerOrEqual EqualEqual Different And Or if else while identifier constant eps
 program
 program start+<+declaration+statementList+>+stop
 declaration type+identifier+;
@@ -20,13 +20,13 @@ oper constant
 oper identifier
 operator Plus
 operator Minus
-operatos Div
+operator Div
 operator Mod
 operator Multiply
-assignStmt idetifier+Equals+expression
+assignStmt identifier+Equals+expression
 ifStmt if+(+condition+)+<+statementList+>+elseStmt
 elseStmt else+<+statementList+>
-elseStmt epsilon
+elseStmt eps
 whileStmt while+(+condition+)+<+statementList+>
 relation Greater
 relation GreaterOrEqual

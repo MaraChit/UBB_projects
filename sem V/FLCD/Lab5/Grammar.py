@@ -103,7 +103,7 @@ def printOptions():
 
 
 if __name__ == '__main__':
-    grammar = Grammar("g2.txt")
+    grammar = Grammar("g3.txt")
     while True:
         try:
             printOptions()
