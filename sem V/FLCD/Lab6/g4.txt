@@ -1,0 +1,10 @@
+S A B C
+int ( ) * # eps
+S
+S A+B
+A (+S+)
+A int+C
+B #+S
+B eps
+C *+A
+C eps
