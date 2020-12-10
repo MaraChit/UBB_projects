@@ -1,0 +1,9 @@
+start main <
+	int a ;
+	int b ;
+
+	if ( a Greater b ) <
+		b Equals a ;
+	> ;
+
+> stop main

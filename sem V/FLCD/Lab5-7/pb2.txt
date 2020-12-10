@@ -1,0 +1,14 @@
+start main <
+	int a ;
+	int sum ;
+	int digit ;
+
+	get a ;
+
+	while ( a Different 0 ) <
+		digit Equals a Mod 10 ;
+		a Equals a Div 10 ;
+		sum Equals sum Plus digit ;
+	>
+
+> stop main

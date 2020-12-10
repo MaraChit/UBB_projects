@@ -1,0 +1,15 @@
+start main <
+	int a ;
+	int b ;
+
+	int max ;
+	get a ;
+	get b ;
+
+	if ( a Greater b ) <
+		max Equals a ;
+	> ;
+
+	give max ;
+
+> stop main

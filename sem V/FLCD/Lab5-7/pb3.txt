@@ -1,0 +1,26 @@
+start main <
+	int n ;
+	int max ;
+	int nr ;
+	int i ;
+	int array [ nr ] ;
+	i Equals 2 ;
+
+	get n ;
+	get nr ;
+
+	max Equals nr ;
+
+	while ( i Smaller n ) <
+		get nr ;
+		i Equals i Plus 1 ;
+		if ( nr Greater max ) <
+			max Equals nr ;
+		>
+		else <
+		    max Equals max ;
+		>
+	>
+	give max ;
+
+> stop main
