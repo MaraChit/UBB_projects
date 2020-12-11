@@ -203,22 +203,10 @@ class Parser:
                 ok = False
                 result = 'error'
 
-        # print(sequenceList)
-        # print(workingList)
         if result == 'accepted':
             return resultList
         else:
             return 'Not accepted'
-
-    def showResult(self, sequence):
-        result = self.parseSequence(sequence)
-        productions = ""
-        for elem in result:
-            rhs = ""
-            for rhs1 in self.numberedDictionary[elem][1]:
-                rhs += rhs1
-            productions = productions + self.numberedDictionary[elem][0] + "->" + rhs + "\n"
-        return productions
 
     # {0: ['S', ['B', 'A']],
     # 1: ['A', ['#', 'B', 'A']],
@@ -232,7 +220,6 @@ class Parser:
     # [0, 3, 7, 4, 6, 0, 3, 7, 5, 1, 3, 7, 5, 2, 5, 2]
     # [[s],[b,a],[d,c,a],[a,c,a],[a,*,...]
     def derivationString(self, sequence):
-        #sequence = self.parseSequence(seq)
         result = []
         result.append([self.grammar.startingSymbol])
         poz = 0
@@ -256,34 +243,6 @@ class Parser:
             result.append(newList)
         return result
 
-    def derivString(self, seq):
-        result = self.parseSequence(seq)
-        string = ""
-        rhs = ""
-        for rhs1 in self.numberedDictionary[0][1]:
-            rhs += rhs1
-        string = string + self.numberedDictionary[0][0] + "->" + rhs
-        for elem in result:
-            prod = self.numberedDictionary[elem][1]
-            for i in prod:
-                poz = 0
-                if i in self.grammar.getNonTerminals():
-                    prod2 = self.numberedDictionary[elem + 1][1]
-                    rhs = ""
-                    for rhs1 in prod2:
-                        rhs += rhs1
-                    string = string + "->" + rhs
-                    for t in prod[poz:]:
-                        string += t
-
-                else:
-                    string = string + i
-                    for t in prod[poz:]:
-                        string += t
-                poz += 1
-        return string
-
-
 if __name__ == '__main__':
     grammar1 = Grammar("g1.txt")
     parser1 = Parser(grammar1)
@@ -293,7 +252,6 @@ if __name__ == '__main__':
     print("Grammar 1:")
     finish=parser1.parseSequence(se1)
     print(finish)
-    #print(parser1.showResult(se1))
     print(parser1.derivationString(finish))
     print(' ')
 
@@ -301,7 +259,6 @@ if __name__ == '__main__':
     scanner2.scan()
     sequence2 = []
     pif = scanner2.programInternalForm
-    #print(pif)
     for elem in pif:
         sequence2.append(pif[elem][0])
 
@@ -309,11 +266,6 @@ if __name__ == '__main__':
     parser2 = Parser(grammar2)
 
     parser2.fillParsingTable()
-    '''
-    for elem in parser2.parsingTable:
-        print(elem, "has", parser2.parsingTable[elem])
-        print()
-        '''
     print('Grammar 2:')
     finish2 = parser2.parseSequence(sequence2)
     print(finish2)
