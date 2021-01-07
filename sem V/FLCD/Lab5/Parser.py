@@ -114,7 +114,7 @@ class Parser:
 
 
 if __name__ == '__main__':
-    grammar = Grammar("g4.txt")
+    grammar = Grammar("g3.txt")
     parser = Parser(grammar)
     parser.first()
     parser.follow()
